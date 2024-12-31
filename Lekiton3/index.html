@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage WebAppStartup</title>
     <style type="text/css">
-      header { background-color: #afa; }
+            header { background-color: #afa; }
       header nav ul { text-align: right; }
       header nav ul li { display: inline; }
       main { display: flex; }
@@ -13,6 +13,11 @@
       footer { background-color: #faa; }
       footer nav ul { text-align: center; }
       footer nav ul li { display: inline; }
+
+      @media screen and (max-width: 767px) {
+      main { display: block; }
+      main nav, main div#content { width: 100%; }
+      }
       
     </style>
   </head>
