@@ -7,13 +7,13 @@
       header { background-color: #afa; }
       header nav ul { text-align: right; }
       header nav ul li { display: inline; }
-      main nav { width: 40%; float: left; background-color: #aaf;
-      }
-      main div#content { width: 60%; float: left; background-color: #aff;
-      }
-      footer { clear: both; background-color: #faa; }
+      main { display: flex; }
+      main nav { width: 40%; background-color: #aaf; }
+      main div#content { width: 60%; background-color: #aff; }
+      footer { background-color: #faa; }
       footer nav ul { text-align: center; }
       footer nav ul li { display: inline; }
+      
     </style>
   </head>
   <body>
@@ -43,8 +43,8 @@
          <li><a href="about.html">Über uns</a></li>
        </ul>
       </nav>
+      <div id="content">
       <section>
-        <div id="content">
         <h1>Willkommen auf der Homepage von WebAppStartup</h1>
         <p>
           Wir konzipieren und implementieren fantastische Web-Applikationen!
@@ -79,10 +79,10 @@
             <td>&euro; 1.000,--</td>
           </tr>
         </tbody>
-      </table>
-    </div>  
+      </table>      
   </section>
-    </main>
+</div>
+</main>
     <footer>
       <nav>
         <ul>
