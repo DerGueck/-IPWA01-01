@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
-    <title>IPWA01</title>
+  <head>       
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage WebAppStartup</title>
     <style type="text/css">
-      p { color: red; }
-      h1 { 
-      background-color: green;
-      padding: 1em;
-      border: 5px solid black;
+      header { background-color: #afa; }
+      header nav ul { text-align: right; }
+      header nav ul li { display: inline; }
+      main nav { width: 40%; float: left; background-color: #aaf;
       }
-      h1, h2 { color: orange; }
-      table { font-size: 200%; }
+      main div#content { width: 60%; float: left; background-color: #aff;
+      }
+      footer { clear: both; background-color: #faa; }
+      footer nav ul { text-align: center; }
+      footer nav ul li { display: inline; }
     </style>
   </head>
   <body>
@@ -41,6 +44,7 @@
        </ul>
       </nav>
       <section>
+        <div id="content">
         <h1>Willkommen auf der Homepage von WebAppStartup</h1>
         <p>
           Wir konzipieren und implementieren fantastische Web-Applikationen!
@@ -53,9 +57,8 @@
         <p>
           Wir haben einen Homepage-Baukasten entwickelt.
         </p>
-      <h2>Unsere Preise</h2>        
-      </section>
-      <table>
+      <h2>Unsere Preise</h2>
+          <table>
         <thead>
           <tr>
             <th>Leistung</th>
@@ -77,6 +80,8 @@
           </tr>
         </tbody>
       </table>
+    </div>  
+  </section>
     </main>
     <footer>
       <nav>
