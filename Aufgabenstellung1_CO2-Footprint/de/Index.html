@@ -48,7 +48,7 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="#" onclick="resetable()">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Instagram</a>
@@ -59,7 +59,7 @@
         </ul>
       </div>
     </div>
-  </nav>  
+  </nav>
   <div class="row">
     <div class="content-nav col-lg-1">
       <ul class="nav flex-column nav-justified ">
@@ -70,10 +70,10 @@
           <br>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#" onclick="buildtable(myArray2021)">2021</a> 
+          <a class="nav-link" href="#" onclick="buildtable(myArray2021)">2021</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#" onclick="sortTable(1)">2022</a>
+          <a class="nav-link" href="#" onclick="">2022</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">2023</a>
@@ -83,15 +83,18 @@
         </li>
       </ul>
     </div>
-    <div class="content-main col-lg-11">
-      <div class="row mainUeberschrift">
-        CO² Daten
-      </div>
-      <div class="container container-sm align-items-start mainSuche">
-        <!--Input für suche-->
+    <div class="content-main col-lg-11 h-auto" >       
+      <div class="col">
+        <div class="container-fluid text-center">
+          Co2 Daten
+          <p>
+        </div>
+       </div>
 
-        <input type="text" id="tbInputFilter" onkeyup="suchen()" placeholder="Land / Unternehmen">
-      </div>
+      <!--Input für suche-->
+
+      <input type="text" id="tbInputFilter" onkeyup="suchen()" placeholder="Land / Unternehmen">
+
 
       <!-- Tabelle erstellen  -->
       <table id="tabelleEmission" class="table table-bordered table-striped-columns">
@@ -116,7 +119,7 @@
   </div>
   </div>
   <div class="row footer">
-    <ul class="nav nav-footer justify-content-center">
+    <ul class="nav nav-footer justify-content-end">
       <li class="nav-item">
         <a class="nav-link" href="#">Datenschutz</a>
       </li>
