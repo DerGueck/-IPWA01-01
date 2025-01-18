@@ -70,13 +70,13 @@
           <br>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#" onclick="buildtable(text1)">Text1</a>
+          <a class="nav-link" href="#" onclick="genderText=text1;buildtable(text1)">Anleitung1</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#" onclick="buildtable(text1)">Text2</a>
+          <a class="nav-link" href="#" onclick="genderText=text2;buildtable(text2)">Anleitung2</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#" onclick="buildtable(text1)">Text3</a>
+          <a class="nav-link" href="#" onclick="genderText=text3;buildtable(text3)">Anleitung3</a>
         </li>
       </ul>
     </div>
@@ -90,7 +90,7 @@
       <!-- Tabelle erstellen  -->
       <table id="tabelleGendern" class="table table-bordered table-striped-columns">
         <tr class="bg-info table-secondary text-center">
-          <th onclick="gendern(text1[0], genderRegeln)">Gendern</th> 
+          <th onclick="gendern(genderText[0], genderRegeln)">Gendern</th> 
         </tr>
         <tbody id="myTableBody">
         </tbody>
