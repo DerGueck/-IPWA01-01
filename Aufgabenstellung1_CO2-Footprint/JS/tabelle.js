@@ -1,13 +1,13 @@
-function resetable() {
+function resetTable() {
   //alte Tabelle löschen
   let table = document.getElementById("myTableBody");
   let row = "";
   table.innerHTML = row;
 }
-
 function buildtable(data) {
+
   //alte Tabelle löschen
-  let table = document.getElementById("myTableBody");
+    let table = document.getElementById("myTableBody");
   for (let i = 0; i < data.length; i++) {
     let row = "";
     table.innerHTML = row;
@@ -22,7 +22,6 @@ function buildtable(data) {
     table.innerHTML += row;
   }
 }
-
 function sortieren(n) {
   let table,
     rows,
@@ -74,14 +73,13 @@ function sortieren(n) {
     }
   }
 }
-
 function suchen() {
   let input, filter, table, tr, tdNull, tdEins, i, txtValueNull, txtValueEins;
   input = document.getElementById("tbInputFilter");
   filter = input.value.toLowerCase();
   table = document.getElementById("tabelleEmission");
   tr = table.getElementsByTagName("tr");
-
+console.log(filter)
   for (let i = 0; i < tr.length; i++) {
     tdNull = tr[i].getElementsByTagName("td")[0];
     tdEins = tr[i].getElementsByTagName("td")[1];
