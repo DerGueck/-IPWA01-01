@@ -1,9 +1,9 @@
-function resetTable() {
-  //alte Tabelle löschen
-  let table = document.getElementById("myTableBody");
-  let row = "";
-  table.innerHTML = row;
-}
+// function resetTable() {
+//   //alte Tabelle löschen
+//   let table = document.getElementById("myTableBody");
+//   let row = "";
+//   table.innerHTML = row;
+// }
 function buildtable(data) {
 
   //alte Tabelle löschen

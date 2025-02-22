@@ -1,5 +1,6 @@
 function jahrÄndern(coJahr) {
-  document.getElementById("coDatenJahr").innerHTML =`<b>`+"CO² Emission für " + coJahr+`</b>`;
+  document.getElementById("coDatenJahr").innerHTML =
+    `<b>` + "CO² Emission für " + coJahr + `</b>`;
 }
 
 function mainContent(eingabe) {
@@ -40,7 +41,8 @@ function mainContent(eingabe) {
             </tbody>
         </table>`;
       break;
-    case "datenschutz":document.getElementById("mainContentPage").innerHTML = `
+    case "datenschutz":
+      document.getElementById("mainContentPage").innerHTML = `
       <div class="col">
         <div class="container-fluid text-center">
         
@@ -110,7 +112,8 @@ function mainContent(eingabe) {
       </div>`;
 
       break;
-    case "impressum":document.getElementById("mainContentPage").innerHTML = `
+    case "impressum":
+      document.getElementById("mainContentPage").innerHTML = `
       <div class="col">
         <div class="container-fluid text-center">      
         <h1>Impressum</h1>
