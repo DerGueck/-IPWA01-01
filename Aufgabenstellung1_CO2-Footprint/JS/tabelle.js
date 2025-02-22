@@ -73,13 +73,18 @@ function sortieren(n) {
     }
   }
 }
+
+
+
 function suchen() {
   let input, filter, table, tr, tdNull, tdEins, i, txtValueNull, txtValueEins;
   input = document.getElementById("tbInputFilter");
   filter = input.value.toLowerCase();
   table = document.getElementById("tabelleEmission");
   tr = table.getElementsByTagName("tr");
-console.log(filter)
+console.log(input)
+  
+
   for (let i = 0; i < tr.length; i++) {
     tdNull = tr[i].getElementsByTagName("td")[0];
     tdEins = tr[i].getElementsByTagName("td")[1];
